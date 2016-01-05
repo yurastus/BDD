@@ -6,10 +6,8 @@ import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
 import org.testng.annotations.Test;
+import steps.GridSteps;
 
-/**
- * Created by Yura on 1/5/2016.
- */
 public class ICanCountFruits extends JUnitStory {
 
     @Override
@@ -18,7 +16,8 @@ public class ICanCountFruits extends JUnitStory {
                 .useStoryLoader(new LoadFromClasspath(this.getClass()))
                 .useStoryReporterBuilder(new StoryReporterBuilder()
                         .withDefaultFormats()
-                        .withFormats(org.jbehave.core.reporters.Format.CONSOLE, org.jbehave.core.reporters.Format.TXT));
+                        .withFormats(org.jbehave.core.reporters.Format.CONSOLE, org.jbehave.core.reporters.Format.TXT,
+                                org.jbehave.core.reporters.Format.HTML_TEMPLATE));
     }
 
     @Override

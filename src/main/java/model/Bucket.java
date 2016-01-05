@@ -1,6 +1,5 @@
-/**
- * Created by Yura on 1/5/2016.
- */
+package model;
+
 public class Bucket {
 
     private int apples;

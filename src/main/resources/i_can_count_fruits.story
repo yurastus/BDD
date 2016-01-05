@@ -1,7 +1,8 @@
 Narrative:
-As a user
-I want to get rest of all fruits
-So that I can actual rest of fruits in bucket
+
+As a apple fun
+I want to eat apples
+So that I can get actual rest of fruits in bucket as well
 
 Scenario: total fruits in bucket
 

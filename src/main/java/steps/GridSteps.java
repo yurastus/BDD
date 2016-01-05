@@ -1,3 +1,6 @@
+package steps;
+
+import model.Bucket;
 import org.jbehave.core.annotations.*;
 import org.testng.Assert;
 
@@ -15,7 +18,6 @@ public class GridSteps {
         bucket.setApples(bucket.getApples() - apples);
     }
 
-    @Pending
     @Then("the rest of apples should be $apple")
     public void restShouldBe(@Named("thenApples")int rest){
         Assert.assertEquals(bucket.getApples(), rest, "\nIncorrect count");

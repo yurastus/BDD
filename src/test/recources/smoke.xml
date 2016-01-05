@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Sample BDD">
+
+    <test name="Multiple params">
+        <classes>
+            <class name="ICanCountFruits"/>
+        </classes>
+    </test>
+
+    <test name="Sample param">
+        <classes>
+            <class name="ICanCountFruit"/>
+        </classes>
+    </test>
+
+</suite>

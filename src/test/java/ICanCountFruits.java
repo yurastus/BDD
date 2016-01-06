@@ -16,7 +16,7 @@ public class ICanCountFruits extends JUnitStory {
                 .useStoryLoader(new LoadFromClasspath(this.getClass()))
                 .useStoryReporterBuilder(new StoryReporterBuilder()
                         .withDefaultFormats()
-                        .withFormats(org.jbehave.core.reporters.Format.CONSOLE, org.jbehave.core.reporters.Format.TXT,
+                        .withFormats(org.jbehave.core.reporters.Format.CONSOLE,
                                 org.jbehave.core.reporters.Format.HTML_TEMPLATE));
     }
 

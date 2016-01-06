@@ -8,6 +8,7 @@ import org.jbehave.core.steps.InstanceStepsFactory;
 import org.testng.annotations.Test;
 import steps.GridSteps;
 
+@Test
 public class ICanCountFruit extends JUnitStory {
 
     @Override
@@ -16,7 +17,7 @@ public class ICanCountFruit extends JUnitStory {
                 .useStoryLoader(new LoadFromClasspath(this.getClass()))
                 .useStoryReporterBuilder(new StoryReporterBuilder()
                         .withDefaultFormats()
-                        .withFormats(org.jbehave.core.reporters.Format.CONSOLE, org.jbehave.core.reporters.Format.TXT,
+                        .withFormats(org.jbehave.core.reporters.Format.CONSOLE,
                                 org.jbehave.core.reporters.Format.HTML_TEMPLATE));
     }
 
@@ -25,7 +26,7 @@ public class ICanCountFruit extends JUnitStory {
         return new InstanceStepsFactory(configuration(), new GridSteps());
     }
 
-    @Test
+
     @Override
     public void run() throws Throwable {
         super.run();

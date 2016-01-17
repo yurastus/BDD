@@ -14,13 +14,13 @@ public class GridSteps {
         bucket = new Bucket(apples);
     }
 
-    @When("I get $apples apples from bucket")
+    @When("I add $apples apples to bucket")
     public void iGetAppleFromBucket(@Named("whenApples")int apples){
-        bucket.setApples(bucket.getApples() - apples);
+        bucket.setApples(bucket.getApples() + apples);
     }
 
     //@Pending
-    @Then("the rest of apples should be $apple")
+    @Then("the total number of apples in bucket should be $apple")
     public void restShouldBe(@Named("thenApples")int rest){
         Assert.assertEquals(bucket.getApples(), rest, "\nIncorrect count");
     }

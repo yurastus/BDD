@@ -1,16 +1,16 @@
 Narrative:
 
-As a apple fun
-I want to eat apples
-So that I can get actual rest of fruits in bucket as well
+As a user
+I want to add fruits to bucket
+So that I can see chosen fruits in bucket as well
 
 Scenario: total fruits in bucket
 
 Given bucket with {givenApples} apples
-When I get {whenApples} apples from bucket
-Then the rest of apples should be {thenApples}
+When I add {whenApples} apples to bucket
+Then the total number of apples in bucket should be {thenApples}
 
 Examples:
 |givenApples|whenApples|thenApples|
-|5          |2         |3         |
-|10         |4         |6         |
+|0          |2         |2         |
+|3          |3         |6         |

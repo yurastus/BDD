@@ -1,11 +1,11 @@
 Narrative:
 
-As a apple fun
-I want to eat apple
-So that I can get actual rest of fruits in bucket as well
+As a user
+I want to add fruits to bucket
+So that I can see chosen fruits in bucket as well
 
 Scenario: total fruits in bucket
 
 Given bucket with 4 apples
-When I get 1 apples from bucket
-Then the rest of apples should be 3
+When I add 3 apples to bucket
+Then the total number of apples in bucket should be 7

@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="Sample BDD">
-
-    <test name="Multiple params">
-        <classes>
-            <class name="ICanCountFruits"/>
-        </classes>
-    </test>
+<suite name="Simple BDD">
 
     <test name="Sample param">
         <classes>
